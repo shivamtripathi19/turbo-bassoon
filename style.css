@@ -1,0 +1,57 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.chat-container {
+  display: flex;
+  height: 100vh;
+}
+
+.contacts-panel {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.chat-panel {
+  flex: 2;
+  padding: 20px;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chat-messages {
+  overflow-y: auto;
+  height: calc(100% - 120px);
+}
+
+.chat-input {
+  margin-top: 20px;
+}
+
+.active-contact {
+  background-color: #ff0000; /* Red color for active contact */
+  color: #ffffff; /* White text color */
+}
+
+textarea {
+  width: calc(100% - 60px);
+  resize: none;
+  padding: 5px;
+}
+
+button {
+  width: 60px;
+  padding: 5px;
+  cursor: pointer;
+}
